@@ -1,0 +1,12 @@
+let numeros = [];
+let contadorpares = 0;
+for (let i = 0; i < 5; i++){
+    let num = parseInt(prompt("Digite um número:"));
+    numeros.push(num);
+}
+for (let num of numeros){
+    if (num % 2 === 0) {
+        contadorpares++;
+    }
+}
+alert(`Quantidade de números pares: ${contadorpares}`);
