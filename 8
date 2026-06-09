@@ -1,0 +1,11 @@
+const numeros = [];
+const posicoesNegativas = [];
+for (let i = 1; i <= 5; i++) {
+    numeros.push(+prompt(`Digite o ${i} número`));}
+for (let i = 0; i < numeros.length; i++){
+    if (numeros[i] < 0) {
+        posicoesNegativas.push(i + 1); }}
+if (posicoesNegativas.length > 0) {
+    alert(`Números negativos encontrados nas posições ${posicoesNegativas.join(", ")}`);
+} else {
+    alert("Nenhum número negativo foi digitado");}
